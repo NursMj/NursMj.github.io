@@ -1,2 +1,2 @@
-# Nursultan
+# Nursultan Mambetzhanov
 My projects
