@@ -1,2 +1,2 @@
-# NursMj.github.io
+# Nursultan
 My projects
