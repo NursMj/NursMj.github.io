@@ -720,11 +720,37 @@ footer {
   .main-subtitle {
     font-size: 1.8rem;
   }
+  .main-form {
+    padding: 2rem 3rem;
+  }
   .section-header {
     margin-bottom: 5rem;
   }
   .section-header h2 {
     font-size: 2.5rem;
+  }
+    .feedback .feedback-prev-btn {
+    left: -1rem;
+  }
+  .feedback .feedback-next-btn {
+    right: -1rem;
+  }
+  .feedback-slider {
+    padding: 2rem 1.7rem;
+  }
+  .feedback-slider-btn {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 2rem;
+    height: 3rem;
+    background-color: #ffffff;
+    border: none;
+  }
+  .feedback-slider-btn img {
+    width: 2rem;
   }
   .scheme .scheme-block:last-child {
     margin-bottom: -2.5rem;
