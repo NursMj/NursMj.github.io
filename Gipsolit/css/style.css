@@ -717,6 +717,9 @@ footer {
     right: 1rem;
     color: #333;
   }
+  .popup-content {
+    padding: 3rem 0;
+  }
   section {
     padding: 5rem 0;
   }
