@@ -708,6 +708,15 @@ footer {
   }
 }
 @media (max-width: 575px) {
+   .form-input,
+  .form-textarea {
+    min-width: 25rem;
+  }
+  .popup-close {
+    top: .1rem;
+    right: 1rem;
+    color: #333;
+  }
   section {
     padding: 5rem 0;
   }
