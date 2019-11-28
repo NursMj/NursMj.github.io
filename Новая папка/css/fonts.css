@@ -1,9 +1,0 @@
-@font-face {
-    font-family: "SegoeUI-Light";
-    src: url("../fonts/SegoeUI-Light/SegoeUI-Light.eot");
-    src: url("../fonts/SegoeUI-Light/SegoeUI-Light.eot?#iefix")format("../embedded-opentype"),
-    url("../fonts/SegoeUI-Light/SegoeUI-Light.woff")format("woff"),
-    url("../fonts/SegoeUI-Light/SegoeUI-Light.ttf")format("truetype");
-    font-stretch: normal;
-    font-weight: normal;
-}
