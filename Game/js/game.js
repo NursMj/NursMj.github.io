@@ -27,6 +27,8 @@ document.addEventListener('touchstart', moveUp);
 
 function moveUp() {
     yPos -=30;
+    flySound.pause();
+    flySound.currentTime = 0;
     flySound.play();
 }
 
