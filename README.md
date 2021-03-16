@@ -9,4 +9,4 @@ My projects
 
 [AlfaStroi](https://nursmj.github.io/AlfaStroi/indix.html "My project")
 
-[Creaters](https://nursmj.github.io/ready/indix.html "My project")
+[Creaters](https://nursmj.github.io/ready/ "My project")
