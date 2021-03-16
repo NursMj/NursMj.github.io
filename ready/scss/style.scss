@@ -1,0 +1,933 @@
+$cg: 'CenturyGothic', sans-serif;
+$mhd:'MontHeavyDemo', sans-serif;
+$text: #414144;
+
+// basic settings 
+html {
+    font-size: 10px; 
+}
+body {
+    background: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.link {
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.section {
+    padding: 19rem 0 7rem;
+}
+.section-title {
+    font-family: $mhd;
+    font-size: 5rem;
+    color: $text;
+    text-transform: uppercase;
+}
+.list {
+    padding-left: 0;
+    list-style: none;
+    font-family: $cg;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: $text;
+}
+.text {
+    font-family: $cg;
+    font-size: 3rem;
+}
+.button{
+    background: transparent;
+    border: none;
+    &:focus {
+        outline: none;
+    }
+}
+.call-button {
+    position: absolute;
+    right: 0;
+    bottom: 7rem;
+    padding: .8rem;
+    width: 12rem;
+    height: 8rem;
+    border: none;
+    background: #1f814a;
+    background-repeat: no-repeat;
+    border-top-left-radius: 4.5rem;
+    border-bottom-left-radius: 4.5rem;
+}
+.call-button:hover {
+    background: darken(#1f814a, 6%);
+}
+.call-button__img {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translate(0, -50%);
+    border-radius: 50%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+.logo_header {
+    display: none;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__item {
+    display: flex;
+    align-items: center;
+    width: 19.5%;
+    color: $text;
+    text-align: center;
+    font-family: $cg;
+    font-size: 2.4rem;
+    background: linear-gradient(to bottom,#fff, transparent);
+    &:hover {
+        background: linear-gradient(to bottom,#acacac, transparent);
+    }
+}
+.menu__item_scroled {
+    background: linear-gradient(to bottom,#acacac, transparent);
+    &:hover {
+        background: linear-gradient(to bottom,#fff, transparent);
+    }
+}
+.menu__link {
+    width: 100%;
+    padding: 4rem 0;
+}
+.main {
+    padding: 13.5rem 0 6rem;
+    background: url(../img/main/mian-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+.logo {
+    width: 23.5rem;
+    text-align: center;
+}
+.logo__img {
+    width: 100%;
+}
+.logo__text {
+    margin-top: .8rem;
+    display: block;
+    font-family: $cg;
+    font-size: 1.7rem;
+}
+.main__title {
+    margin-top: 9rem;
+    font-family: $mhd;
+    font-size: 6.7rem;
+    color: $text;
+}
+.main__suptitle {
+    margin-top: .5rem;
+    color: #207546;
+}
+.main__button {
+    margin-top: 15rem;
+    width: 34.5rem;
+    transition: all .2s linear;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+.main__button-img {
+    width: 100%;
+}
+
+.advantages {
+    position: relative;
+    background: url(../img/advantages/advantages-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+.advantages__list {
+    margin-top: 7rem;
+}
+.advantages__item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 11rem;
+    display: flex;
+    align-items: center;
+    height: 7.5rem;
+}
+.advantages__item:last-child {
+    margin-bottom: 0;
+}
+.advantages__img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+.finance {
+    position: relative;
+    background: url(../img/finance/finance-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+.finance__list {
+    margin-top: 16rem;
+}
+.finance__item {
+    position: relative;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    height: 6rem;
+}
+.finance__item:last-child {
+    margin-bottom: 0;
+}
+.finance__item::before {
+    content: '';
+    position: absolute;
+    left: -1.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6rem;
+    height: 6rem;
+    background: linear-gradient(to bottom,#2ad386, #008d4c);
+    border-radius: 50%;
+}
+.finance__text {
+    z-index: 1;
+}
+
+.rings {
+    margin: -5.5rem 0 -2rem 0;
+    width: 68rem;
+}
+.rings-row {
+    display: flex;
+    justify-content: center;
+}
+.rings-row_middle {
+    margin: -2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.ring {
+    position: relative;
+    width: 24rem;
+    height: 24rem;
+    background: url(../img/finance/ring.png) center center no-repeat;
+    background-size: cover;
+}
+.ring__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20rem;
+    height: 14rem;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.ring__text {
+    font-family: $cg;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    color: $text;
+}
+.ring__img {
+    position: absolute;
+    display: block;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+.interest {
+    font-size: 10.5rem;
+    line-height: 11.8rem;
+    color: #0aa060; 
+}
+.work {
+    position: relative;
+    background: url(../img/work/work-bg.jpg) center center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.work__content {
+    margin: 8rem 0 7rem;
+}
+.work-item {
+    margin: 0 auto;
+    width: 90%;
+}
+.work-item__img {
+    display: block;
+    margin: 0 auto;
+}
+.work-item__text {
+    margin-top: 8.5rem;
+    font-family: $mhd;
+    font-size: 2.1rem;
+    line-height: 2.4rem;
+    color: $text;
+
+}
+
+.partners {
+    padding-top: 13rem;
+    background: url(../img/partners/partners-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+.partners__title {
+    text-align: center;
+}
+.partners__list {
+    margin-top: 4rem;
+    padding-left: 7rem;
+}
+.partners__item {
+    line-height: 3.5rem;
+    color: $text;
+}
+.contact {
+    padding: 8rem 0;
+    background: url(../img/contact/contact-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+.form {
+    margin: 0 auto;
+    padding: 5rem 5rem 3rem 5rem;
+    width: 66rem;
+    background: #fff;
+    border-radius: 4.8rem;
+    box-shadow: 0 1.5rem 1rem rgba(0,0,0,.3);
+}
+.form__title {
+    font-family: $mhd;
+    font-size: 3.9rem;
+    color: #42c175;
+    text-align: center;
+}
+
+.form__input {
+    display: block;
+    margin-top: 6rem;
+    padding: .8rem 2rem;
+    width: 100%;
+    border: none;
+    border-radius: .9rem;
+    box-shadow: inset 0px 3px 6px rgba(155, 155, 155, 0.7);
+    &::placeholder {
+        color: #dbdbdb;
+        opacity: 1;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+.form__button {
+    display: block;
+    margin: 3rem auto 0;
+    padding: 1.5rem 3rem;
+    font-family: $mhd;
+    font-size: 3.9rem;
+    color: #fff;
+    background: linear-gradient(to bottom,#2ad386, #008d4c);
+    border-radius: 4.5rem;
+    box-shadow: 0 .8rem 1.2rem rgba(0,0,0,.4);
+    &:hover {
+        background: linear-gradient(to bottom,#27be7a, #016637);
+    }
+}
+
+
+.footer {
+    padding-top: 4rem;
+    color: #fff;
+    background: #7e7e7e;
+}
+.footer__contant {
+    padding-left: 3.5rem;
+}
+.footer__title {
+    color: #fff;
+}
+.contacts__item {
+    position: relative;
+    margin-top: 6rem;
+    padding-left: 9rem;
+}
+.contacts__img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    border-radius: 50%;   
+    box-shadow: 0 .6rem 1.3rem rgba(0,0,0,.3);
+}
+.location_img {
+    box-shadow: none;
+    border-radius: 0; 
+}
+.footer-details {
+    margin-top: 10rem;
+    padding: 0;
+    list-style: none;
+}
+.footer-details__item {
+    margin-top: 4rem;
+}
+
+
+
+
+
+
+@media (min-width: 1600px) {
+    .container_big {
+        margin: 0 auto;
+        padding: 0 4rem;
+        max-width: 183rem;
+    }
+}
+@media (max-width: 1599px) {
+    .section {
+        padding-top: 12rem;
+    }
+    .section-title {
+        font-size: 4rem;
+    }
+    .text {
+        font-size: 2.7rem;
+    }
+    .call-button {
+        width: 10rem;
+    }
+    .menu__item {
+        font-size: 2rem;
+    }
+    .menu__link {
+        padding: 1rem 0;
+    }
+    .main {
+        padding-top: 10rem;
+    }
+    .main__title {
+        margin-top: 7rem;
+        font-size: 5.5rem;
+    }
+    .main__button {
+        margin-top: 10rem;
+    }
+    .advantages__list {
+        margin-top: 5rem;
+    }
+    .finance__title {
+        margin-right: -3rem;
+    }
+    .finance__list {
+        margin-top: 10rem;
+    }
+    .rings {
+        margin: 0;
+        width: 100%;
+    }
+    .ring {
+        width: 20rem;
+        height: 20rem;
+    }
+    .ring__inner {
+        width: 100%;
+        height: 12.5rem;
+    }
+    .ring__text {
+        font-size: 1.5rem;
+    }
+    .ring__img {
+        transform: translate(-50%, 10%);
+    }
+    .work__content {
+        margin: 6rem 0;
+    }
+    .work-item__img {
+        width: 60%;
+    }
+    .work-item__text {
+        margin-top: 5rem;
+    }
+    .form {
+        padding: 4rem 4rem 3rem 4rem;
+        width: 60rem;
+    }
+    .form__title  {
+        font-size: 3.2rem;
+    }
+    .form__input {
+        margin-top: 4rem;
+    }
+    .form__button {
+        font-size: 3.2rem;
+    }
+    .footer {
+        padding: 3.5rem 0;
+    }
+    .contacts {
+       margin-right: -3rem;
+    }
+    .contacts__item {
+        margin-top: 4rem;
+        padding-left: 5rem;
+    }
+    .contacts__img {
+        width: 4.5rem;
+    }
+    .footer-details {
+        margin-top: 7rem;
+    }
+    .footer-details__item {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    .section {
+        padding-top: 9rem;
+    }
+    .section-title {
+        font-size: 3.5rem;
+    }
+    .text {
+        font-size: 2.2rem;
+    }
+    .list {
+        font-size: 1.7rem;
+    }
+    .call-button {
+        bottom: 3rem;
+    }
+    .menu__item {
+        font-size: 1.8rem;
+    }
+    .logo {
+        width: 20rem;
+    }
+    .logo__text {
+        font-size: 1.4rem;
+    }
+    .main__title {
+        margin-top: 5rem;
+        font-size: 4.5rem;
+    }
+    .main__button {
+        margin-top: 8rem;
+        width: 29rem;
+    }
+    .advantages {
+        background: url(../img/advantages/advantages-bg.jpg) 10% center no-repeat;
+    }
+    .advantages__item {
+        padding-left: 8rem;
+    }
+    .advantages__img {
+        width: 6rem;
+    }
+    .rings {
+        margin-top: 6rem;
+        margin-left: -5rem;
+        width: 110%;
+    }
+    .ring {
+        width: 16rem;
+        height: 16rem;
+    }
+    .ring__inner {
+        height: 10rem;
+    }
+    .ring__text {
+        font-size: 1.3rem;
+    }
+    .ring__img {
+        height: 6.5rem;
+    }
+    .interest {
+        font-size: 8rem;
+        line-height: 3rem;
+    }
+    .work__content {
+        margin: 4rem 0;
+    }
+    .work-item__text {
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+    .footer {
+        padding: 3.5rem 0;
+    }
+    .contacts {
+        margin-right: -1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .section {
+        padding-top: 7rem;
+        padding-bottom: 5rem;
+    }
+    .section-title {
+        font-size: 3rem;
+    }
+    .text {
+        font-size: 2rem;
+    }
+    .call-button {
+        right: 1rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+    }
+    .call-button__img {
+        width: 4rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .menu__item {
+        font-size: 1.5rem;
+    }
+    .main {
+        padding: 9rem 0 2rem;
+    }
+    .logo {
+        width: 15rem;
+    }
+    .logo__text {
+        font-size: 1.2rem;
+    }
+    .main__title {
+        margin-top: 4rem;
+        font-size: 3.5rem;
+    }
+    .main__button {
+        margin-top: 6rem;
+        width: 22rem;
+    }
+    .advantages__item {
+        height: 5rem;
+    }
+    .finance__list {
+        margin-top: 5rem;
+    }
+    .finance__item {
+        margin-bottom: 1rem;
+    }
+    .finance__item::before {
+        width: 4rem;
+        height: 4rem;
+    }
+    .rings {
+        margin: 4rem auto 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .rings-row {
+        width: 24%;
+    }
+    .rings-row_middle {
+        margin: 0;
+        width: 49%;
+    }
+    .work-item {
+        width: 100%;
+    }
+    .form {
+        padding: 2rem;
+        width: 40rem;
+        border-radius: 2rem;
+    }
+    .form__title {
+        font-size: 2.5rem;
+    }
+    .form__input {
+        margin-top: 1.5rem;
+    }
+    .form__button {
+        margin: 1.5rem auto 0;
+        padding: .5rem 1.5rem;
+        font-size: 3.2rem;
+    }
+    .footer {
+        padding: 3.5rem 0;
+    }
+    .footer__contant {
+        padding-left: 0;
+    }
+    .contacts {
+        margin-right: 0;
+    }
+    .location_img {
+        top: 30%;
+    }
+    .footer-details {
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .body_block {
+        overflow: hidden;
+    }
+    .text {
+        font-size: 1.7rem;
+    }
+    .list {
+        font-size: 1.5rem;
+    }
+    .call-button {
+        bottom: 1rem;
+    }
+    .section {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+    .section-title {
+        font-size: 2.2rem;
+    }
+    .header {
+        background: #f4f6f2;
+        padding: 1.1rem 0;
+    }
+    .logo_header {
+        display: block;
+        margin-left: 3rem;
+        width: 10rem;
+    }
+    .menu {
+        position: fixed;
+        display: block;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top,#acacac, #f4f6f2);
+        transition: all .3s linear;
+        overflow: auto;
+    }
+    .menu_active {
+        top: 5rem;
+    }
+    .menu__item {
+        margin: 0 auto;
+        width: 55%;
+        font-size: 2rem;
+        background: transparent;
+        border-bottom: .3rem solid #515155;
+    }
+    .burger {
+        position: absolute;
+        top: 50%;
+        right: 4rem;
+        transform: translate(0, -50%);
+        width: 2rem;
+        height: 2rem;
+        background: url(../img/main/menu.png) center center no-repeat;
+        background-size: cover;
+        transition: all .3s linear;
+    }
+    .burger_active {
+        background: url(../img/main/close.png) center center no-repeat;
+        background-size: cover;
+    }
+    .logo_main {
+        display: none;
+    }
+    .main__title {
+        margin-top: 0rem;
+        font-size: 2.7rem;
+    }
+
+    .advantages__img {
+        width: 5rem;
+    }
+    .advantages__item {
+        padding-left: 5.5rem;
+    }
+    .advantages__list {
+        margin-top: 3rem;
+    }
+    .finance__title {
+        margin-right: 0;
+    }
+    .finance__item {
+        padding-left: 3rem;
+    }
+    .rings-row {
+        width: 50%;
+    }
+    .rings-row_middle {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .ring {
+        background: none;
+    }
+    .work__content {
+        margin-bottom: 0;
+    }
+    .work-item {
+        margin-top: 1.5rem;
+        width: 80%;
+    }
+    .work-item__img {
+        width: 30%;
+    }
+    .partners__list {
+        margin-top: 2rem;
+        padding-left: 1rem;
+    }
+    .form__button {
+        font-size: 2rem;
+    }
+    .contacts__item {
+        margin-top: 2rem;
+        padding-left: 5rem;
+    }
+    .contacts__img {
+        width: 3.5rem;
+    }
+    .footer-details__item {
+        margin-top: 1rem;
+    }
+    .footer {
+        padding: 3.5rem 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .section {
+        padding: 3rem 0;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .text {
+        font-size: 1.5rem;
+    }
+    .list {
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+    }
+    .call-button {
+        display: none;
+    }
+    .logo_header {
+        margin-left: 2rem;
+        width: 9rem;
+    }
+    .menu_active {
+        top: 4.7rem;
+    }
+    .menu__item {
+        width: 90%;
+    }
+    .burger {
+        right: 2rem;
+    }
+    .main__title {
+        font-size: 2rem;
+    }
+    .main__button {
+        margin-top: 4rem;
+        width: 18rem;
+    }
+    .advantages__img {
+        width: 4rem;
+    }
+    .finance__list {
+        margin-top: 2rem;
+    }
+    .finance__item::before {
+        left: -0.7rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .rings {
+        flex-wrap: wrap;
+    }
+    .form {
+        padding: 1rem;
+        width: 29rem;
+    }
+    .rings-row {
+        width: 100%;
+    }
+    .rings-row {
+        justify-content: center;
+    }
+    .ring {
+        width: 80%;
+        padding-bottom: 1rem;
+        border-bottom: .2rem solid #0aa060;
+    }
+    .ring__inner {
+        width: 26rem;
+        height: 12rem;
+    }
+    .ring__img {
+        transform: translate(-50%, 0%);
+    }
+    .work__content {
+        margin-top: 2rem;
+    }
+    .work-item__text {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+    .partners__item {
+        line-height: 1.8rem;
+    }
+    .form__title {
+        font-size: 2rem;
+    }
+    .form__button {
+        margin: .5rem auto 0;
+        font-size: 1.7rem;
+        box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.4);
+    }
+    .contacts__img {
+        width: 3rem;
+    }
+}
+
+
+
+
+@font-face {
+    font-family: "CenturyGothic"; 
+    src: url("../fonts/Century\ Gothic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "MontHeavyDemo"; 
+    src: url("../fonts/Mont\ Heavy\ DEMO.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
